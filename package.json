@@ -1,0 +1,48 @@
+{
+  "name": "vsj",
+  "version": "0.1.0",
+  "description": "Simple, fast, minimal JSON Schema validation.",
+  "type": "module",
+  "module": "src/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./src/index.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twuni/vsj"
+  },
+  "author": {
+    "email": "devin@canterberry.cc",
+    "name": "Devin Canterberry"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "sh scripts/lint",
+    "test": "sh scripts/test"
+  },
+  "devDependencies": {
+    "c8": "^7.12.0",
+    "eslint": "^8.30.0",
+    "eslint-plugin-ante": "1.1.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:ante/recommended",
+      "plugin:ante/style"
+    ],
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "eslint-plugin-ante"
+    ]
+  }
+}

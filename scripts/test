@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -eu
+
+exec c8 --check-coverage --branches 100 --functions 100 --exclude '**/test.mjs' --exclude '**/*.test.mjs' --lines 100 --statements 100 node src/test.mjs
