@@ -17,3 +17,5 @@ assertInvalid({ maxLength: 1, type: 'string' }, 'Hi');
 
 assertValid({ pattern: '^A', type: 'string' }, 'Ah');
 assertInvalid({ pattern: '^A', type: 'string' }, 'Ha');
+
+assertValid({ format: 'uri', type: 'string' }, 'data:text/plain;');
