@@ -1,3 +1,3 @@
-export const propertyIn = (object, property) => Object.prototype.hasOwnProperty.call(object, property);
+export const propertyIn = (object, property) => Object.hasOwn(object, property);
 
 export default propertyIn;

@@ -1,11 +1,7 @@
-import { ValidationError } from '../ValidationError.mjs';
-
-import { assertOneOf } from '../assertOneOf.mjs';
 import { assertType } from '../assertType.mjs';
 import { conditionalValidation } from '../conditionalValidation.mjs';
-import { propertyIn } from '../propertyIn.mjs';
-import { validateAnyEnum } from './any/enum.mjs';
 import { validateAnyConst } from './any/const.mjs';
+import { validateAnyEnum } from './any/enum.mjs';
 
 const keywords = Object.freeze({
   const: validateAnyConst,

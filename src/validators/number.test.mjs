@@ -3,6 +3,8 @@ import { validateNumber } from './number.mjs';
 
 const state = { depth: 0, instanceLocation: '', keywordLocation: '', onError(error) { throw error; } };
 
+/* eslint-disable no-magic-numbers */
+
 assert.throws(() => validateNumber({ type: 'number' })('!', state));
 assert.doesNotThrow(() => validateNumber({ type: 'number' })(1, state));
 
@@ -18,3 +20,5 @@ assert.throws(() => validateNumber({ exclusiveMaximum: 1, type: 'number' })(1, s
 
 assert.throws(() => validateNumber({ multipleOf: 2, type: 'number' })(1, state));
 assert.doesNotThrow(() => validateNumber({ multipleOf: 2, type: 'number' })(2, state));
+
+/* eslint-enable no-magic-numbers */

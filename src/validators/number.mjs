@@ -1,5 +1,3 @@
-import { ValidationError } from '../ValidationError.mjs';
-
 import { assertType } from '../assertType.mjs';
 import { conditionalValidation } from '../conditionalValidation.mjs';
 import { validateAnyConst } from './any/const.mjs';

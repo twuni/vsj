@@ -1,5 +1,3 @@
-import { ValidationError } from '../../ValidationError.mjs';
-
 import { propertyIn } from '../../propertyIn.mjs';
 import { substate } from '../../substate.mjs';
 

@@ -1,4 +1,3 @@
-import { assertOneOf } from '../assertOneOf.mjs';
 import { assertType } from '../assertType.mjs';
 import { conditionalValidation } from '../conditionalValidation.mjs';
 import { validateAnyConst } from './any/const.mjs';

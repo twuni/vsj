@@ -1,9 +1,10 @@
 {
   "name": "vsj",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simple, fast, minimal JSON Schema validation.",
   "type": "module",
   "module": "src/index.mjs",
+  "sideEffects": false,
   "exports": {
     ".": {
       "import": "./src/index.mjs"
@@ -19,30 +20,12 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "sh scripts/lint",
-    "test": "sh scripts/test"
+    "clean": "rm -fR node_modules package-lock.json",
+    "lint": "eslint src",
+    "test": "c8 --config c8.config.json node src/test.mjs"
   },
   "devDependencies": {
-    "c8": "^7.12.0",
-    "eslint": "^8.30.0",
-    "eslint-plugin-ante": "1.1.0"
-  },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "es6": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:ante/recommended",
-      "plugin:ante/style"
-    ],
-    "parserOptions": {
-      "ecmaVersion": "latest",
-      "sourceType": "module"
-    },
-    "plugins": [
-      "eslint-plugin-ante"
-    ]
+    "c8": "^10.1.2",
+    "eslint": "^9.9.0"
   }
 }

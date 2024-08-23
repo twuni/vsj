@@ -1,0 +1,12 @@
+{
+  "100": true,
+  "all": true,
+  "clean": true,
+  "exclude": [
+    "**/test.mjs",
+    "**/*.test.mjs"
+  ],
+  "src": [
+    "src"
+  ]
+}

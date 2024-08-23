@@ -10,7 +10,7 @@ assert.doesNotThrow(() => validateObject({ type: 'object' })({}, state));
 assert.throws(() => validateObject({ minProperties: 1, type: 'object' })({}, state));
 assert.doesNotThrow(() => validateObject({ minProperties: 1, type: 'object' })({ test: true }, state));
 assert.doesNotThrow(() => validateObject({ maxProperties: 1, type: 'object' })({ test: true }, state));
-assert.throws(() => validateObject({ maxProperties: 1, type: 'object' })({ test: true, fail: true }, state));
+assert.throws(() => validateObject({ maxProperties: 1, type: 'object' })({ fail: true, test: true }, state));
 
 assert.doesNotThrow(() => validateObject({ required: ['test'], type: 'object' })({ test: true }, state));
 assert.throws(() => validateObject({ required: ['test'], type: 'object' })({}, state));
