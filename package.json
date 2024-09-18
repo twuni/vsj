@@ -1,6 +1,6 @@
 {
   "name": "vsj",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Simple, fast, minimal JSON Schema validation.",
   "type": "module",
   "module": "src/index.mjs",
@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "c8": "^10.1.2",
-    "eslint": "^9.9.0"
+    "eslint": "^9.10.0"
   }
 }

@@ -1,5 +1,6 @@
 import './validators/array.test.mjs';
 import './validators/boolean.test.mjs';
+import './validators/function.test.mjs';
 import './validators/integer.test.mjs';
 import './validators/null.test.mjs';
 import './validators/number.test.mjs';

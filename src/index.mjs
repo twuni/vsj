@@ -4,6 +4,7 @@ import { anyOf } from './anyOf.mjs';
 import { defaultState } from './defaults.mjs';
 import { validateArray } from './validators/array.mjs';
 import { validateBoolean } from './validators/boolean.mjs';
+import { validateFunction } from './validators/function.mjs';
 import { validateInteger } from './validators/integer.mjs';
 import { validateNull } from './validators/null.mjs';
 import { validateNumber } from './validators/number.mjs';
@@ -13,6 +14,7 @@ import { validateString } from './validators/string.mjs';
 const byType = Object.freeze({
   array: validateArray,
   boolean: validateBoolean,
+  function: validateFunction,
   integer: validateInteger,
   null: validateNull,
   number: validateNumber,
